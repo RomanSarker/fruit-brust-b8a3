@@ -5,10 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/fruit6.png" type="image/x-icon">
+    <!-- Tailwind and Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lato google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome icon -->
+    <script src="https://kit.fontawesome.com/c6df4c7019.js" crossorigin="anonymous"></script>
+    <!-- Tailwind custome color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navcolor: '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    <h1>Fruit Brust</h1>
+<body class="font-lato">
+    <header>
+        <!-- Navbar Section start -->
+
+        <div class="navbar bg-base-100 bg-navcolor">
+            <div class="flex-1">
+                <ul class="flex gap-10 ">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Shop</li>
+                    <li>All Fruits</li>
+                </ul>
+                <div class="logo-title-center flex ">
+
+                    <img src="./images/logo.png" alt="">
+                    <h3>Fruit Burst</h3>
+                </div>
+            </div>
+            <div class="flex-none gap-2">
+                <div class="form-control">
+                    <input type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto" />
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Navbar Section End -->
+    </header>
 </body>
 
 </html>
